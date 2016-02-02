@@ -1,0 +1,17 @@
+{
+  "name": "buffer",
+  "version": "0.0.0",
+  "description": "Buffer for general purpose use. Templated for most datatypes.",
+  "keywords": [],
+  "author": "Sam Grove <sam.grove@arm.com>",
+  "repository": {
+    "url": "git@github.com:ARMmbed/buffer.git",
+    "type": "git"
+  },
+  "homepage": "https://github.com/ARMmbed/buffer",
+  "license": "Apache-2.0",
+  "extraIncludes": [
+    "buffer"
+  ],
+  "dependencies": {}
+}

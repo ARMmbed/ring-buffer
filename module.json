@@ -1,6 +1,6 @@
 {
   "name": "ring-buffer",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Buffer for general purpose use. Templated for most datatypes.",
   "keywords": [],
   "author": "Sam Grove <sam.grove@arm.com>",

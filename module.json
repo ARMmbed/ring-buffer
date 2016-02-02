@@ -1,6 +1,6 @@
 {
   "name": "buffer",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Buffer for general purpose use. Templated for most datatypes.",
   "keywords": [],
   "author": "Sam Grove <sam.grove@arm.com>",

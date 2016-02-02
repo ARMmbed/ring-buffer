@@ -1,10 +1,10 @@
 
 /**
- * @file    Buffer.cpp
+ * @file    RingBuffer.cpp
  * @brief   Software Buffer - Templated Ring Buffer for most data types
  * @author  sam grove
  * @version 1.0
- * @see     
+ * @see
  *
  * Copyright (c) 2013
  *
@@ -20,57 +20,57 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- 
-#include "Buffer.h"
+
+#include "ring-buffer/RingBuffer.h"
 
 template <class T>
-Buffer<T>::Buffer(uint32_t size)
+RingBuffer<T>::RingBuffer(uint32_t size)
 {
     _buf = new T [size];
     _size = size;
     clear();
-    
+
     return;
 }
 
 template <class T>
-Buffer<T>::~Buffer()
+RingBuffer<T>::~RingBuffer()
 {
     delete [] _buf;
-    
+
     return;
 }
 
 template <class T>
-uint32_t Buffer<T>::getSize() 
-{ 
-    return this->_size; 
+uint32_t RingBuffer<T>::getSize()
+{
+    return this->_size;
 }
 
 template <class T>
-void Buffer<T>::clear(void)
+void RingBuffer<T>::clear(void)
 {
     _wloc = 0;
     _rloc = 0;
     memset(_buf, 0, _size);
-    
+
     return;
 }
 
 template <class T>
-uint32_t Buffer<T>::peek(char c)
+uint32_t RingBuffer<T>::peek(char c)
 {
     return 1;
 }
 
 // make the linker aware of some possible types
-template class Buffer<uint8_t>;
-template class Buffer<int8_t>;
-template class Buffer<uint16_t>;
-template class Buffer<int16_t>;
-template class Buffer<uint32_t>;
-template class Buffer<int32_t>;
-template class Buffer<uint64_t>;
-template class Buffer<int64_t>;
-template class Buffer<char>;
-template class Buffer<wchar_t>;
+template class RingBuffer<uint8_t>;
+template class RingBuffer<int8_t>;
+template class RingBuffer<uint16_t>;
+template class RingBuffer<int16_t>;
+template class RingBuffer<uint32_t>;
+template class RingBuffer<int32_t>;
+template class RingBuffer<uint64_t>;
+template class RingBuffer<int64_t>;
+template class RingBuffer<char>;
+template class RingBuffer<wchar_t>;

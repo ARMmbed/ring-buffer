@@ -1,3 +1,7 @@
+## Deprecation note!
+
+**Please note: This repository is deprecated and it is no longer actively maintained**.
+
 # ring-buffer
 Buffer for general purpose use. Templated for most datatypes.
 
